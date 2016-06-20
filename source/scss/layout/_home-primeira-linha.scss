@@ -1,0 +1,15 @@
+.primeira-linha {
+  padding: 40px 0;
+}
+.texto-esquerda {
+  @extend .col-md-7;
+  @extend .col-sm-12;
+}
+.foto-direita {
+  @extend .col-md-5;
+  @extend .col-sm-12;
+
+  img {
+    @extend .img-fluid;
+  }
+}

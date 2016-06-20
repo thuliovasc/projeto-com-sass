@@ -1,0 +1,70 @@
+//Cabeçalho
+
+//Imports
+@import "../variaveis";
+
+
+.topo {
+  width: 100%;
+  padding: 30px 0;
+  background: $cor-princial-2;
+
+  nav {
+    @extend .navbar;
+    @extend .navbar-light;
+  }
+
+
+  .logo {
+    float: left;
+    color: $cor-princial-1;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+
+    //@extend .col-lg-4;
+    //@extend .col-xs-4;
+
+  }
+  .menu {
+    color: $preto;
+    text-align: right;
+    margin-top: 12px;
+
+    @extend .collapse;
+    @extend .navbar-toggleable-xs;
+
+    ul {
+      float: right;
+      @include media-breakpoint-down(xs) {
+        float: none
+      }
+
+
+      @extend .nav;
+      @extend .navbar-nav;
+    }
+    li {
+      float: left;
+      margin-left: 20px;
+
+
+      @include media-breakpoint-down(xs) {
+        clear: both;
+        padding: 15px;
+        margin-left: 0;
+        border-bottom: 1px dashed #fff;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+  .menu-mobile {
+    float: right;
+
+    @extend .navbar-toggler;
+    @extend .hidden-sm-up;
+  }
+
+
+}
