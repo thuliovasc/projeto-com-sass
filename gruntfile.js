@@ -42,7 +42,7 @@ module.exports = function (grunt) {
                 tasks:['uglify']
             },
             css: {
-                files: ['source/scss/*.scss'],
+                files: ['source/scss/**/*.scss'],
                 tasks: ['compass:dev']
             },
             html: {

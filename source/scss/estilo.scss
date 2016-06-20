@@ -1,5 +1,18 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-div {
-  display: block;
+//Layout
+@import "layout/header";
+@import "layout/home-primeira-linha";
+
+
+.teste {
+  @include make-col();
+
+  @include media-breakpoint-down(xs) {
+    @include make-col-span(12);
+  }
+  @include media-breakpoint-up(sm) {
+    @include make-col-span(6);
+  }
+
 }

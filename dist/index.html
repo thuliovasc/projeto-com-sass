@@ -2,22 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagina de teste</title>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/script.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div class="topo">
-        <div class="container">
-            <div class="logo">
-                Logo
+    <header class="topo">
+        <nav>
+            <button class="menu-mobile" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+                ☰
+            </button>
+            <a class="logo" href="#">Logo</a>
+            <div class="menu" id="navbar-header">
+                <ul>
+                    <li>Home</li>
+                    <li>Sobre Nós</li>
+                    <li>Pagina Interna</li>
+                    <li>Contato</li>
+                </ul>
             </div>
-            <nav>
-                Menu
-            </nav>
+        </nav>
+    </header>
+    <section class="primeira-linha">
+        <div class="container">
+            <div class="texto-esquerda">
+                <h1>Lorem ipsum</h1>
+                <h2>Cras a tellus pellentesque, dignissim nisl a, mollis lacus. Nam quis convallis velit.</h2>
+                <p>Curabitur egestas, ex a laoreet vehicula, ligula nisi pellentesque purus, quis egestas mi enim eu enim. Curabitur non vulputate lectus, eu aliquam ex. Aenean sit amet nulla odio. Sed quis metus in nisl fermentum tristique. Mauris non nulla sit amet orci ultricies sagittis at commodo velit. Mauris elementum nisl sit amet nisl ornare, quis convallis mauris placerat. Phasellus ultricies mauris dolor, nec convallis tellus facilisis vel.</p>
+                <p>Ut pharetra condimentum libero, at malesuada erat ultricies sed. Curabitur sed nisi id orci fermentum auctor. Mauris ipsum orci, dapibus quis ante a, ultrices viverra massa. In eget mollis dui, vitae egestas nunc. Curabitur non euismod ante, nec consequat elit. Donec convallis et massa venenatis lobortis. Sed at rhoncus orci, eget blandit felis. Proin hendrerit mauris metus, porta maximus nunc fermentum et. Pellentesque faucibus, massa convallis dapibus elementum, tellus velit iaculi.</p>
+            </div>
+            <div class="foto-direita">
+                <img src="http://placehold.it/700x700" alt="">
+            </div>
+
         </div>
-    </div>
+    </section>
 </body>
 </html>

@@ -7,6 +7,7 @@
     "bootstrap": "^4.0.0-alpha.2"
   },
   "devDependencies": {
+    "compass": "^0.1.1",
     "grunt": "^1.0.1",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-imagemin": "^1.0.1",
